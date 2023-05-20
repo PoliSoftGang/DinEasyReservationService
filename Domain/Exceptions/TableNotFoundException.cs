@@ -2,10 +2,10 @@
 
 namespace Domain.Exceptions
 {
-    public sealed class PeculiarityNotFoundException : NotFoundException
+    public sealed class TableNotFoundException : NotFoundException
     {
-        public PeculiarityNotFoundException(Guid tableId)
-            : base($"The table with the identifier {tableId} was not found.")
+        public TableNotFoundException(int TableId)
+            : base($"The table with the identifier {TableId} was not found.")
         {
         }
     }

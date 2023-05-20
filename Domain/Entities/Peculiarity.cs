@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Peculiarity
+    public class Peculiarity : Entity
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public string? Description { get; set; }
 

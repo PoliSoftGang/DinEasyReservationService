@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Reservation
+    public class Reservation : Entity
     {
-        public int Id { get; set; }
         public DateTime Date { get; set; }
         public int PeopleQuantity { get; set; }
 

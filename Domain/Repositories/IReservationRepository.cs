@@ -10,7 +10,7 @@ namespace Domain.Repositories
     public interface IReservationRepository
     {
         Task<IEnumerable<Reservation>> GetAllAsync();
-        Task<Reservation> GetByIdAsync(int id);
+        Task<Reservation?> GetByIdAsync(int id);
         Reservation Update(Reservation reservation);
         void Add(Reservation reservation);
     }

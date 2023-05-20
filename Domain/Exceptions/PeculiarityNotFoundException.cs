@@ -2,10 +2,10 @@
 
 namespace Domain.Exceptions
 {
-    public sealed class OwnerNotFoundException : NotFoundException
+    public sealed class PaculiarityNotFoundException : NotFoundException
     {
-        public OwnerNotFoundException(Guid ownerId)
-            : base($"The owner with the identifier {ownerId} was not found.")
+        public PaculiarityNotFoundException(int PaculiarityId)
+            : base($"The paculiarity with the identifier {PaculiarityId} was not found.")
         {
         }
     }

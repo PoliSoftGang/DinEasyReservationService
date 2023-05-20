@@ -10,7 +10,7 @@ namespace Domain.Repositories
     public interface IPeculiarityRepository
     {
         Task<IEnumerable<Peculiarity>> GetAllAsync();
-        Task<Peculiarity> GetByIdAsync(int id);
+        Task<Peculiarity?> GetByIdAsync(int id);
         Peculiarity Update(Peculiarity peculiarity);
         void Add(Peculiarity peculiarity);
     }

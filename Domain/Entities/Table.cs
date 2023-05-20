@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Table
+    public class Table : Entity
     {
-        public int Id { get; set; }
         public int SeatsNumber { get; set; }
         public int TableNumber { get; set; }
         public bool Availability { get; set; }
